@@ -19,13 +19,12 @@ pub fn clear_color(red: GLfloat, green: GLfloat, blue: GLfloat, aplha: GLfloat) 
     }
 }
 
-/*
-pub fn clear(mask: GLClearMask) {
+pub fn clear(mask: enums::GLClearMask) {
     unsafe {
         gl::Clear(mask as GLenum);
     }
 }
-*/
+
 
 /// Render primitives from array data
 ///

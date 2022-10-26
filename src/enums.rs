@@ -2,6 +2,12 @@ use gl;
 
 #[repr(u32)]
 #[derive(Clone, Copy)]
+pub enum GLClearMask {
+    ColorBufferBit = gl::COLOR_BUFFER_BIT,
+}
+
+#[repr(u32)]
+#[derive(Clone, Copy)]
 pub enum Target {
     ArrayBuffer = gl::ARRAY_BUFFER,
     ElementArrayBuffer = gl::ELEMENT_ARRAY_BUFFER,
